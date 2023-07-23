@@ -2,17 +2,18 @@ import React, { ReactNode } from "react";
 import LayoutHeader from "./header";
 import LayoutFooter from "./footer";
 import CarRentPage from "./car-rent";
-interface Props {
-  children?: ReactNode;
-}
-export default function Layout({ children }: Props) {
+import CartModal from "../cart-modal";
+
+export default function Layout() {
+  const [showModal, setShowModal] = React.useState(false)
   return (
     <div>
-      <LayoutHeader />
+      <LayoutHeader setShowModal={setShowModal} />
 
       <CarRentPage />
 
       <LayoutFooter />
+     <CartModal showModal={showModal} setShowModal={setShowModal}/>
     </div>
   );
 }

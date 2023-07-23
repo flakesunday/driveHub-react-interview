@@ -1,14 +1,14 @@
 import React from "react";
 import { Navbar, Container } from "react-bootstrap";
-export default function LayoutHeader() {
+export default function LayoutHeader({setShowModal}) {
   return (
     <div>
       <Navbar expand="lg" className="app-header shadow bg-white rounded">
-        <Container >
+        <Container className="container">
           <div>
             <h4 style={{fontWeight:'700'}}>DRIVEHUB</h4>
           </div>
-          <div>cart</div>
+          <a href='#' onClick={()=>{setShowModal(true)}}>cart</a>
         </Container>
       </Navbar>
     </div>
