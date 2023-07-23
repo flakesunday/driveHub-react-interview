@@ -1,5 +1,5 @@
 
-import Layout from "./components/layout";
+import DriveHubPage from './components/layout';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./css/App.css";
 import "./css/layout.css"
@@ -20,7 +20,7 @@ function App() {
         <div>Cart</div>
       </div>
       <div className="app-footer">FOOTER</div> */}
-      <Layout/>
+      <DriveHubPage/>
        
       
     </div>
