@@ -14,7 +14,7 @@ export default function DriveHubPage() {
       <CarRentPage setCarAdded={setCarAdded} carAdded={carAdded} />
 
       <LayoutFooter />
-      <CartModal showModal={showModal} setShowModal={setShowModal} />
+      <CartModal showModal={showModal} setShowModal={setShowModal} carAdded={carAdded} setCarAdded={setCarAdded} />
     </div>
   );
 }
