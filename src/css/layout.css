@@ -5,11 +5,11 @@
   height: 70px;
 
   align-items: center;
-  padding-left: 40px;
 }
 .app-header .container {
   display: flex;
   justify-content: space-between;
+  padding: 0px 30px 0px 0px;
 }
 
 /*Carrent Section*/
@@ -32,6 +32,7 @@
 /*carListPart*/
 
 .car-list {
+  min-height: 100vh;
   background-color: #f8f8f8;
   padding-bottom: 20px;
 }
@@ -47,7 +48,7 @@
 /*FooterSection*/
 .footer-layout {
   color: #fdfdfd;
-  background-color: black;
+  background-color: #03102e;
   padding: 20px 0px;
 }
 .footer-layout .company-place {
@@ -55,6 +56,7 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+
 /* .footer-layout .company-place .company-license {
   display: flex;
   align-items: flex-end;
@@ -81,7 +83,7 @@
   .footer-layout .company-place {
     display: block;
   }
-  .footer-layout .company-place .company-office{
+  .footer-layout .company-place .company-office {
     padding-bottom: 50px;
   }
 }
