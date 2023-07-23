@@ -4,7 +4,7 @@ import CarList from "../../car-rent/carList";
 import { Container } from "react-bootstrap";
 import axios from "axios";
 
-export default function CarRentPage() {
+export default function CarRentPage({setCarAdded,carAdded}) {
   const [searchCarByTitle, setSearchCarByTitle] = React.useState("");
   const [list,setList] = React.useState([])
   const [carLists, setCarList] = React.useState([]);
@@ -66,7 +66,7 @@ export default function CarRentPage() {
   
       <div className="car-rent">
         <SearchAndSortCar setSearchCarByTitle={setSearchCarByTitle} list={list} carLists={carLists} setCarList={setCarList} setDropdownValue={setDropdownValue} />
-        <CarList list={carLists} />
+        <CarList carAdded={carAdded} list={carLists} setCarAdded={setCarAdded} />
       </div>
   
   );
