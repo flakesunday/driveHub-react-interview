@@ -1,0 +1,87 @@
+/*Header Section*/
+.app-header {
+  background: #fdfdfd;
+  color: rgba(19, 19, 19, 1);
+  height: 70px;
+
+  align-items: center;
+  padding-left: 40px;
+}
+.app-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Carrent Section*/
+
+/* searchPart*/
+.search-section {
+  display: flex;
+}
+
+.search-section .wrap-search-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-section .wrap-search-section .search-section-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*carListPart*/
+
+.car-list {
+  background-color: #f8f8f8;
+  padding-bottom: 20px;
+}
+.car-list .car-card {
+  min-height: 100%;
+}
+.car-list .car-card .car-card-img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+/*FooterSection*/
+.footer-layout {
+  color: #fdfdfd;
+  background-color: black;
+  padding: 20px 0px;
+}
+.footer-layout .company-place {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* .footer-layout .company-place .company-license {
+  display: flex;
+  align-items: flex-end;
+} */
+
+@media (max-width: 545px) {
+  .search-section .wrap-search-section {
+    display: block;
+  }
+  .search-section .wrap-search-section .search-section-input {
+    display: block;
+  }
+
+  .search-section .wrap-search-section .search-section-input .search-by-title {
+    margin-bottom: 10px;
+  }
+  /*carListPart*/
+  .car-list .car-card .car-card-img {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+  }
+  /*FooterSection*/
+  .footer-layout .company-place {
+    display: block;
+  }
+  .footer-layout .company-place .company-office{
+    padding-bottom: 50px;
+  }
+}
